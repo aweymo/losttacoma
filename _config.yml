@@ -26,10 +26,14 @@ tagline: a collection of demolished and unbuilt architecture on the Puget Sound
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: "This repository is a partial representation of the Lost Tacoma collection, constituting 116 of the total 560 blueprints across 26 locations. The technical drawings include both proposed buildings which were never constructed and constructed buildings which are now demolished."
 =======
 description: "This collection is a partial representation of the Tacoma Public Library Northwest Room's Lost Tacoma collection, constituting 116 of the total 560 blueprints across 27 locations. The technical drawings include both proposed buildings which were never constructed and constructed buildings which are now demolished."
 >>>>>>> parent of bb7bb49... cmon
+=======
+description: "This repository is a partial representation of the Lost Tacoma collection, constituting 116 of the total 560 blueprints across 26 locations. The technical drawings include both proposed buildings which were never constructed and constructed buildings which are now demolished."
+>>>>>>> parent of 17f58b8... tag 3
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: Andrew Weymouth
 
