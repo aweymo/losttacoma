@@ -20,12 +20,12 @@ source-code: https://github.com/aweymo/losttacoma
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: Lost Tacoma
+title: Lost Tacoma:
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: a collection of demolished and unbuilt architecture on the Puget Sound
+tagline: Demolished and Unbuilt Architecture on the Puget Sound
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "This repository is a partial representation of the Lost Tacoma collection, constituting 116 of the total 560 blueprints across 26 locations. The technical drawings include both proposed buildings which were never constructed and constructed buildings which are now demolished."
+description: "This work is a partial representation of the Tacoma Public Library Northwest Room's Lost Tacoma collection, constituting 116 of the total 560 blueprints across 26 locations. The technical drawings include both proposed buildings which were never constructed and constructed buildings which are now demolished."
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: Andrew Weymouth
 
