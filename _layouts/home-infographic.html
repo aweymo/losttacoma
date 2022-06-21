@@ -3,10 +3,44 @@
 layout: page
 ---
 {%- assign items = site.data[site.metadata] -%}
-<script src="https://unpkg.com/scroll-scene-element/dist/scroll-scene-element.js" type="module"></script>
-<div class="row">
-  <div class="col-md-8">
-</head>
+  </style>
+  <script src="https://unpkg.com/scroll-scene-element/dist/scroll-scene-element.js" type="module"></script>
+  <script type="module">
+    const offset = 0.5;
+
+    function getRandomIntInclusive(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min; // The maximum is inclusive and the minimum is inclusive
+    }
+
+    const container = document.querySelector('.scroller-container');
+    const graphic = document.querySelector('.graphic');
+    const scenesContainer = document.querySelector('.scroller-items');
+    const scenes = Array.from(scenesContainer.querySelectorAll('scroll-scene'));
+
+    scenes.forEach((scene) => {
+      scene.style.padding = getRandomIntInclusive(200, 400) + 'px 0';
+    })
+
+    document.querySelector('.midpoint').style.top = (1 - offset) * 100 + '%';
+
+    scenesContainer.addEventListener('scroll-scene-enter', ({ detail }) => {
+      const index = scenes.indexOf(detail.element);
+      detail.element.classList.add('active');
+      graphic.textContent = 'Scene Graphic ' + (index + 1);
+    });
+
+    scenesContainer.addEventListener('scroll-scene-exit', ({ detail }) => {
+      detail.element.classList.remove('active');
+    });
+
+    container.addEventListener('scroll-scene-exit', (event) => {
+      if (event.target === container) {
+        graphic.textContent = 'Waiting to be activated';
+      }
+    });
+  </script>
 <body>
   <h1>About</h1>
   <div class="intro-text">
