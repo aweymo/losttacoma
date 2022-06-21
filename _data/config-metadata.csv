@@ -1,10 +1,10 @@
 field,display_name,browse_link,external_link
 title,Title,
-status,Status,
+status,Status,true
 date,Date Created,
 description,Description,
 subject,Architect(s),true
-location,Location
+location,Location,true
 latitude,Latitude
 longitude,Longitude
 source,Source
