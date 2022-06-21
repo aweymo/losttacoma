@@ -3,6 +3,133 @@
 layout: page
 ---
 {%- assign items = site.data[site.metadata] -%}
+  <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>scroll-scene progress</title>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin: 0 0 75vh;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 600px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .intro-text {
+      margin-bottom: 30vh;
+    }
+
+    .intro-text p {
+      line-height: 1.5;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 600px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .scroller-container {
+      margin-bottom: 75vh;
+      padding-left: -1rem;
+      padding-right: -1rem;
+    }
+
+    .scroller-container__column {
+      width: 100%;
+    }
+
+    .scroller-items {
+      width: 100%;
+    }
+
+    .scroller-items > scroll-scene {
+      align-items: center;
+      font-family: monospace;
+      background-color: lightyellow;
+      color: grey;
+      display: flex;
+      font-size: 1.25rem;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .scroller-items > scroll-scene.active {
+      background-color: paleturquoise;
+    }
+
+    .graphic {
+      background-color: hsla(0, 0%, 83%, 75%);
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      font-size: 1.5rem;
+      height: 300px;
+      width: 100%;
+      top: 25%;
+      position: fixed;
+    }
+
+    .sticky-top {
+      z-index: 1020 !important;
+    }
+
+    @media screen and (min-width: 34em) {
+      .scroller-container {
+        display: flex;
+        position: relative;
+      }
+
+      .scroller-items {
+        width: 450px;
+      }
+
+      .scroller-container__column {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        position: relative;
+      }
+
+      .sticky-top {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 12.5%;
+      }
+
+      .graphic {
+        height: 75vh;
+      }
+    }
+
+    .midpoint {
+      border-top: 2px dotted black;
+      height: 0px;
+      left: 0px;
+      position: fixed;
+      width: 100%;
+      z-index: 9000;
+    }
   </style>
   <script src="https://unpkg.com/scroll-scene-element/dist/scroll-scene-element.js" type="module"></script>
   <script type="module">
@@ -41,36 +168,30 @@ layout: page
       }
     });
   </script>
+</head>
 <body>
   <h1>About</h1>
   <div class="intro-text">
     <p>
-      This work is a partial representation of the Tacoma Public Library Northwest Room's Lost Tacoma collection,
-    </p>
+    This work is a partial representation of the Tacoma Public Library Northwest Room's Lost Tacoma collection,
     <p>
-     constituting 116 of the total 560 blueprints across 26 locations.
+constituting 116 of the total 560 blueprints across 26 locations.
     </p>
   </div>
 
-<div class="scrollytelling-container">
-	<scroll-scene>
-		<h2>Scene 1</h2>
-		<p>The technical drawings include both proposed buildings which were never constructed and constructed buildings which are now demolished.</p>
-	</scroll-scene>
-	<scroll-scene>
-		<h2>Scene 2</h2>
-		<p>The scans of the blueprints were not performed by the Tacoma Public Library and some cropping and levels of the image files are not ideal.</p>
-	</scroll-scene>
-	<scroll-scene>
-		<h2>Scene 3</h2>
-		<p>The technical drawings have been reformatted and restored for legibility.</p>
-	</scroll-scene>
-  <scroll-scene>
-		<h2>Scene 4</h2>
-		<p>Restoration, arrangement and description was performed by Andrew Weymouth on the part of the Tacoma Public Library Northwest Room.</p>
-	</scroll-scene>
-	<scroll-scene>
-		<h2>Scene 5</h2>
-		<p>Please visit the library's image archive here.</p>
-	</scroll-scene>
-</div>
+  <scroll-scene class="scroller-container">
+    <div class="scroller-items scroller-container__column">
+      <scroll-scene>The technical drawings include both proposed buildings which were never constructed and constructed buildings which are now demolished.</scroll-scene>
+      <scroll-scene>The scans of the blueprints were not performed by the Tacoma Public Library and some cropping and levels of the image files are not ideal.</scroll-scene>
+      <scroll-scene>The technical drawings have been reformatted and restored for legibility.</scroll-scene>
+      <scroll-scene>Restoration, arrangement and description was performed by Andrew Weymouth on the part of the Tacoma Public Library Northwest Room.</scroll-scene>
+      <scroll-scene>Please visit the library's image archive here.</scroll-scene>
+    </div>
+    <div class="scroller-visual scroller-container__column">
+      <div class="graphic sticky-top"></div>
+    </div>
+  </scroll-scene>
+
+  <div class="midpoint"></div>
+</body>
+</html>
