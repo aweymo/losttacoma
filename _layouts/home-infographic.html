@@ -2,7 +2,6 @@
 # Default home page with boxes providing collection stats
 layout: page
 ---
-{%- assign items = site.data[site.metadata] -%}
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,9 +13,16 @@ layout: page
 
 .column {
   float: left;
+  padding: 10px;
+  height: 300px; 
+}
+
+.left {
   width: 25%;
-  padding: 50px;
-  height: 600px; 
+}
+
+.right {
+  width: 75%;
 }
 
 .row:after {
@@ -25,6 +31,33 @@ layout: page
   clear: both;
 }
 </style>
+      <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #FFFFFF;
+        background-size: 230%;
+      }
+      h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+        font-size: 100px;
+        color: #FFFFFF;
+        text-shadow: 2px 2px #F4A460;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        text-transform: uppercase;
+        transition: 0.5s;
+        opacity: 0.6;
+        -webkit-background-clip: text;
+      }
+      h1:hover {
+        letter-spacing: 10px;
+      }
+    </style>
 </head>
 <body>
 
@@ -34,9 +67,9 @@ layout: page
   <div class="column" style="background-color:#FFFFFF;">
     <br>
     <br>
-    <h4><p><strong>This work is a partial representation of the Tacoma Public Library Northwest Room's Lost Tacoma collection,<strong>constituting 116 of the total 560 blueprints across 26 locations.</p>
+    <p><strong>This work is a partial representation of the Tacoma Public Library Northwest Room's Lost Tacoma collection,<strong>constituting 116 of the total 560 blueprints across 26 locations.</p>
     <br>
-    <p>Technical drawings include both proposed buildings which were never constructed and constructed buildings which are now demolished.<p><h4>
+    <p>Technical drawings include both proposed buildings which were never constructed and constructed buildings which are now demolished.<p>
     <br>
     <br>
     <sub>The Buffelen Apartments, original scan and reformatted image<sub>
@@ -51,9 +84,9 @@ layout: page
   <div class="column" style="background-color:#FFFFFF;">
     <br>
     <br>
-    <h4><p><strong>The scans of the blueprints were not performed by the Tacoma Public Library and some cropping and levels of the image files are not ideal.<strong></p>
+    <p><strong>The scans of the blueprints were not performed by the Tacoma Public Library and some cropping and levels of the image files are not ideal.<strong></p>
     <br>
-    <p>Some technical drawings have been reformatted and restored for legibility.<p><h4>
+    <p>Some technical drawings have been reformatted and restored for legibility.<p>
     <br>
     <br>
     <sub>The Pacific Refridgeration Company, original scan and reformatted image<sub>
@@ -68,9 +101,9 @@ layout: page
   <div class="column" style="background-color:#FFFFFF;">
     <br>
     <br>
-    <h4><p>Restoration, arrangement and description was performed by Andrew Weymouth on the part of the Tacoma Public Library Northwest Room.</p>
+    <p>Restoration, arrangement and description was performed by Andrew Weymouth on the part of the Tacoma Public Library Northwest Room.</p>
     <br>
-    <p><strong>The technical drawings have been reformatted and restored for legibility.<strong><p><h4>
+    <p><strong>The technical drawings have been reformatted and restored for legibility.<strong><p>
     <br>
     <br>
     <sub>The Talmud Torah Synagogue, original scan and reformatted image<sub>
