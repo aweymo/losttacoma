@@ -3,3 +3,65 @@ title: Arthur J. Bachelor
 layout: about
 permalink: /bachelor.html
 ---
+{%- assign items = site.data[site.metadata] -%}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 800px; 
+}
+
+.left {
+  width: 50%;
+}
+  
+.column {
+  float: right;
+  padding: 10px;
+  height: 800px; 
+  }
+  
+.right {
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ @media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column left" style="background-color:#FFFFFF;">
+    <h4><p><b>Arthur J. Bachelor</b></p></h4>
+    <br>
+    <p>Lost Tacoma Locations: <a href="https://aweymo.github.io/losttacoma/browse.html#4801-05 YAKIMA AVE S, TACOMA">Mission Theater</a></p>
+    <br>
+    <p>The architect that drew up the plans for the Mission Theater in 1924 is unclear. There is an Arthur J. Bachelor that was primarily active in Tacoma's photography community, but was also an active member of the Kiwanis Club, Tacoma Executive Association and the Tacoma Yacht Club. That said, the most thorough profile of Bachelor in the 1954 Tacoma News Tribune reveals nothing about amateur draftsmanship.</p>
+    <br>
+    <p>Sources: “Tribune (Published as THE TACOMA NEWS TRIBUNE) - June 3, 1954 - Page 17,”</p>
+    <br>
+    </div>
+  <div class="column right" style="background-color:#FFFFFF;">
+    <a href="https://aweymo.github.io/losttacoma/browse.html#4801-05 YAKIMA AVE S, TACOMA"><img src="https://aweymo.github.io/losttacoma/objects/p_bachelor.jpeg" alt="Arthur J. Bachelor" style="float:right;max-width:100%;"></a>
+  </div>
+</div>
+ 
+</body>
+</html>
