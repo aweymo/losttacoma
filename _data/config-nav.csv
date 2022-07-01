@@ -1,6 +1,5 @@
 display_name,stub,dropdown_parent
 Home,/
-Browse,/browse.html
 Architects,,
 Abraham H. Albertson,/albertson.html,Architects
 Everett Phipps Babcock,/babcock.html,Architects
@@ -26,4 +25,5 @@ Albert Sutton,/sutton.html,Architects
 Harrison Allen Whitney,/whitney.html,Architects
 Map,/map.html
 Timeline,/timeline.html
+Browse,/browse.html
 Data,/data.html
