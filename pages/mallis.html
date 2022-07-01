@@ -3,3 +3,78 @@ title: William Mallis
 layout: about
 permalink: /mallis.html
 ---
+{%- assign items = site.data[site.metadata] -%}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 800px; 
+}
+
+.left {
+  width: 50%;
+}
+  
+.column {
+  float: right;
+  padding: 10px;
+  height: 800px; 
+  }
+  
+.right {
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ @media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column left" style="background-color:#FFFFFF;">
+    <h4><p><b>William Mallis</b></p></h4>
+    <br>
+    <em>1883-1954</em>
+    <br>
+    <p>Lost Tacoma Locations: <a href="https://aweymo.github.io/losttacoma/item.html?id=lt049">Dupont School Building Addition</a></p>
+    <br>
+    <p>William Mallis was born in Auchterarder, Scotland and received architectural training during a four year apprenticeship in Perth, Scotland. After working under John H. Felt, one of the most prolific school designers in Kansas, Mallis moved to Seattle in 1918 and worked as a structural draftsman for the Pacific Coast Company. From that point, Mallis worked independently as well as a partner with Joseph H.D. DeHart on a wide variety of public institutional buildings across Washington State.</p>
+    <br>
+    <p>Other Work: 
+    <br>
+    <a href="https://digitalcollections.lib.washington.edu/digital/collection/imlswrvm/id/44/rec/15">Thomas Grade School</a>
+    <br>
+    <a href="https://cdm16118.contentdm.oclc.org/digital/collection/p15015coll4/id/3028/rec/2">Nathan Eckstein Middle School</a></p>
+    <br>
+    <sub>Sources: “PCAD - William Mallis.”, “Tribune (Published as THE TACOMA NEWS TRIBUNE) - July 20, 1938 - Page 7,”</sub>
+    <br>
+    </div>
+  <div class="column right" style="background-color:#FFFFFF;">
+    <a href="https://aweymo.github.io/losttacoma/item.html?id=lt049"><img src="https://aweymo.github.io/losttacoma/objects/ ext_dupont" alt="Dupont School Building Addition" style="max-width:100%;object-fit: contain;"></a>
+  </div>
+</div>
+  
+</body>
+</html>
