@@ -3,3 +3,70 @@ title: Harry E. Flickinger
 layout: about
 permalink: /flickinger.html
 ---
+{%- assign items = site.data[site.metadata] -%}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 800px; 
+}
+
+.left {
+  width: 50%;
+}
+  
+.column {
+  float: right;
+  padding: 10px;
+  height: 800px; 
+  }
+  
+.right {
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ @media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column left" style="background-color:#FFFFFF;">
+    <h4><p><b>Harry E. Flickinger</b></p></h4>
+    <br>
+    <p>Lost Tacoma Locations: <a href="https://aweymo.github.io/losttacoma/item.html?id=lt052">Garage for Jail and Public Safety Building</a></p>
+    <br>
+    <p>Harry E. Flickinger was a draftsman for the City of Tacoma in the 1940s. One of Flickinger's few appearances in the historical record was in a profile for the Tacoma Times with an accompanying photo by the Richards Studio of the designer sitting in front of a detailed custom model train set, with multiple electrical switchboards and a painted mountain background.</p>
+    <br>
+    <sub>Sources: "Tacoma Times - July 23, 1940 - Page 4"</sub>
+    <br>
+    </div>
+  <div class="column right" style="background-color:#FFFFFF;">
+    <a href="https://cdm17061.contentdm.oclc.org/digital/collection/p17061coll21/id/32495/rec/1"><img src="https://aweymo.github.io/losttacoma/objects/p_flickinger.jpeg" alt="Harry E. Flickinger" style="float:right;min-width:100%;"></a>
+  </div>
+</div>
+  
+</body>
+</html>
