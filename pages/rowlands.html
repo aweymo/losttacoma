@@ -3,3 +3,75 @@ title: Thomas Mck. Rowlands
 layout: about
 permalink: /rowlands.html
 ---
+{%- assign items = site.data[site.metadata] -%}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 800px; 
+}
+
+.left {
+  width: 50%;
+}
+  
+.column {
+  float: right;
+  padding: 10px;
+  height: 800px; 
+  }
+  
+.right {
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ @media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column left" style="background-color:#FFFFFF;">
+    <h4><p><b>Thomas Mck. Rowlands</b></p></h4>
+    <br>
+    <p>Lost Tacoma Locations: <a href="https://aweymo.github.io/losttacoma/item.html?id=lt051">Fireboat for the City of Tacoma</a></p>
+    <br>
+    <p>Thomas Mck. Rowlands was a professor of naval architecture at the University of Washington. In addition to education and commission work for the City of Tacoma, Rowlands would charter his yacht Bettybelle for trips around Lake Washington, British Columbia and Alaska.</p>
+    <br>
+    <sub>Sources: “Seattle Daily Times (Published as THE SEATTLE DAILY TIMES) - June 9, 1936 - Page 16,”, "The Seattle Star (Seattle, Washington) ·  Thu, Apr 29, 1937 ·  Page 17", The Log. Miller Freeman Publications, 1954.</sub>
+    <br>
+    </div>
+  <div class="column right" style="background-color:#FFFFFF;">
+    <a href="https://aweymo.github.io/losttacoma/item.html?id=lt051"><img src="https://aweymo.github.io/losttacoma/objects/ ext_fireboat" alt="Fireboat for the City of Tacoma" style="max-width:100%;"></a>
+    <br>
+    <sub>Fireboat for the City of Tacoma, TPL Historic Building Files (BU-14839), c.a. 1981
+    <br>  
+    Courtesy Northwest Room</sub>
+  </div>
+  </div>
+</div>
+  
+</body>
+</html>
