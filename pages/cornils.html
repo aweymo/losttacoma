@@ -3,3 +3,71 @@ title: P.V. Cornils
 layout: about
 permalink: /cornils.html
 ---
+{%- assign items = site.data[site.metadata] -%}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 800px; 
+}
+
+.left {
+  width: 50%;
+}
+  
+.column {
+  float: right;
+  padding: 10px;
+  height: 800px; 
+  }
+  
+.right {
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ @media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column left" style="background-color:#FFFFFF;">
+    <h4><p><b>P.V. Cornils</b></p></h4>
+    <br>
+    <em>1872-1964</em>
+    <br>
+    <p>Lost Tacoma Locations: <a href="https://aweymo.github.io/losttacoma/item.html?id=lt028">Carsten Packing Company Pork House</a><a href="https://aweymo.github.io/losttacoma/item.html?id=lt027">Carsten Packing Company Coolers and Shipping Office</a> </p>
+    <br>
+    <p>According to passages in Electrical West and American Machinist magazines, published in 1922, P.V. Cornils acted as the Carsten Packing Company in-house architect, designing various additions around the original structure. </p>
+    <br>
+    <p>Other Work: <a href="https://pauldorpat.com/2018/02/10/seattle-now-then-cornish-school-construction-1921/">Cornish School</a>, <a href="https://www.historylink.org/File/9000">Stimson Building</a>, <a href="https://i0.wp.com/pauldorpat.com/wp-content/uploads/2011/02/16-white-bldg-adver-web1.jpg">White & Stuart Building</a> </p>
+    <br>
+    <sub>Sources: "American Machinist. McGraw-Hill, 1922.", "Electrical West. McGraw-Hill Company of California, 1922.”</sub>
+    <br>
+    <br>
+    <sub>TPL Cultural Resource Survey (BU-10009), 1977, Courtesy Northwest Room</sub>
+    <br>
+  <div class="column right" style="background-color:#FFFFFF;">
+    <a href="https://aweymo.github.io/losttacoma/search/index.html?q=cornils"><img src="https://aweymo.github.io/losttacoma/objects/ext_carstens" alt="Carstens Packing Company" style="float:right;max-width:100%"></a>
+  </div>
+</div>
+  
+</body>
+</html>
